@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Componentes - Eletro Kurumin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregarComponentesBanco()">
+
+
+<a href="relatorio.html">
+<button>Ver Relatório</button>
+</a>
+
+
+    <h1>Eletro Kurumin</h1>
+
+
+    <h2>Controle de Estoque</h2>
+
+
+    <h3>Componentes</h3>
+
+
+
+
+<h3>Cadastrar componente</h3>
+
+
+<form>
+    <input type="text" id="nome" placeholder="Nome do componente">
+    <input type="text" id="descricao" placeholder="Descrição">
+    <input type="number" id="preco" placeholder="Preço">
+    <input type="number" id="quantidade" placeholder="Quantidade">
+
+
+    <button type="button" onclick="cadastrar()">Cadastrar</button>
+</form>
+
+
+
+
+   
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Quantidade</th>
+    </tr>
+
+
+    <tbody id="lista">
+  </tbody>
+
+
+</table>
+
+
+<script src="script.js"></script>
+</body>
+</html>
